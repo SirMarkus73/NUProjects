@@ -1,14 +1,31 @@
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [space, setSpace] = useState(500)
+
   return (
     <>
-      <div className="container">
-        <div className="item">Red</div>
-        <div className="item">Green</div>
-        <div className="item">Blue</div>
+      <div
+        className="container"
+        style={{ width: `${space}px`, height: `${space}px` }}
+      >
+        <div className="item" />
+        <div className="item" />
+        <div className="item" />
       </div>
-      <input className="rangeSelector" type="range" name="space" id="space" />
+      <input
+        className="rangeSelector"
+        value={space}
+        type="range"
+        name="space"
+        id="space"
+        min={150}
+        max={500}
+        onChange={(event) => {
+          setSpace(event.target.value)
+        }}
+      />
     </>
   )
 }
