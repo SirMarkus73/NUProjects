@@ -4,7 +4,8 @@
   "description": "Not Useful Projects collection",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write ."
   },
   "keywords": [],
   "author": "Markus",
@@ -16,5 +17,8 @@
     "eslint-plugin-react": "^7.34.1",
     "globals": "^15.3.0",
     "undefined": "^0.1.0"
+  },
+  "dependencies": {
+    "prettier": "^3.2.5"
   }
 }

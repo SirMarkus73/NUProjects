@@ -1,6 +1,3 @@
-import config from "eslint-config-prettier";
+import config from 'eslint-config-prettier'
 
-
-export default [
-  ...[].concat(config),
-];
+export default [...[].concat(config)]
