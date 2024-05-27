@@ -3,9 +3,9 @@ import './App.css'
 function App() {
   return (
     <div className="container">
-      <div>Red</div>
-      <div>Green</div>
-      <div>Blue</div>
+      <div className="item">Red</div>
+      <div className="item">Green</div>
+      <div className="item">Blue</div>
     </div>
   )
 }
